@@ -5,6 +5,7 @@ public class MyBuffer<T> {
 	private T[] buffer;
 	
 	//constructor, creats an empty buffer with given capacity
+	@SuppressWarnings("unchecked")
 	public MyBuffer (int capacity) {
 		buffer = (T[]) new Object[capacity];
 		for(int i = 0; i < buffer.length; i++)
